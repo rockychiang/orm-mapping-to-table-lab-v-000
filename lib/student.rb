@@ -31,7 +31,7 @@ class Student
   end
   
   def self.create(name:, grade:)
-    self..new(name, grade).tap{|student| student.save}
+    self.new(name, grade).tap{|student| student.save}
   end
   
   # Remember, you can access your database connection anywhere in this class
