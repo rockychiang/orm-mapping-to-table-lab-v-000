@@ -26,7 +26,8 @@ class Student
   
   def save
     sql = <<- SQL
-      INSERT INTO students (name, grade) VALUES 
+      "INSERT INTO students (name, grade) VALUES (?, ?)"
+      
   end
   
   # Remember, you can access your database connection anywhere in this class
