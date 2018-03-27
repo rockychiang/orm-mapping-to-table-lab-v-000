@@ -23,6 +23,7 @@ class Student
     sql = <<- SQL
       DELETE TABLE students
       SQL
+    DB[:conn].execute(sql)
   end
   
   # Remember, you can access your database connection anywhere in this class
